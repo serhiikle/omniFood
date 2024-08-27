@@ -3,24 +3,52 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>OmniFood</title>
 </head>
 <body>
-	<section class="hero">
-		<div class="hero__wrapper">
-			<div class="hero__content">
-				<h1 class="hero__title">A healthy meal delivered to your door, every single day</h1>
-				<p class="hero__text">
-					The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
-				</p>
-				<a class="btn btn--full" href="#">Start eating well</a>
-				<a class="btn btn--outline" href="#">Learn more &darr;</a>
+	<header class="header">
+		<img src="./img/omnifood-logo.png" alt="Omnigood" class="header__logo">
+		<nav class="header__menu">
+			<ul class="header__menu-list">
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 1</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 2</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 3</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 4</a></li>
+				<li class="header__menu-item"><a href="#" class="header__menu-link nav-cta">Section 5</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero__wrapper">
+				<div class="hero__content">
+					<h1 class="hero__title">A healthy meal delivered to your door, every single day</h1>
+					<p class="hero__text">
+						The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. 
+					</p>
+					<a class="btn btn--full margin-right-sm" href="#">Start eating well</a>
+					<a class="btn btn--outline" href="#">Learn more &darr;</a>
+					<div class="hero__delivered">
+						<div class="hero__delivered-images">
+							<img src="./img/customers/customer-1.jpg" alt="Customer photo">
+							<img src="./img/customers/customer-2.jpg" alt="Customer photo">
+							<img src="./img/customers/customer-3.jpg" alt="Customer photo">
+							<img src="./img/customers/customer-4.jpg" alt="Customer photo">
+							<img src="./img/customers/customer-5.jpg" alt="Customer photo">
+							<img src="./img/customers/customer-6.jpg" alt="Customer photo">
+						</div>
+						<p class="hero__delivered-text"><span>250,000+</span> meals delivered last year!</p>
+					</div>
+				</div>
+				<div class="hero__image">
+					<img class="hero__image-item" src="img/hero.png" alt="Woman enjoing food, meals in storage container and food bowls on a table">
+				</div>
 			</div>
-			<div class="hero__image">
-				<img class="hero__image-item" src="img/hero.png" alt="Woman enjoing food, meals in storage container and food bowls on a table">
-			</div>
-		</div>
-	</section>
+		</section>
+	</main>
 </body>
 </html>

@@ -7,6 +7,8 @@
 	--secondaryColor: #333;
 	--heroBgColor: #fdf2e9;
 	--whiteColor: #fff;
+
+	--borderRadius: 9px;
 }
 
 /*=================== RESEST STYLE =========================*/
@@ -29,9 +31,9 @@
 	display: inline-block;
 	font-size: 2rem;
 	text-decoration: none;
-	border-radius: 0.8rem;
+	border-radius: var(--borderRadius);
 	padding: 1.6rem 3.2rem;
-
+	font-weight: 600;
 	transition: all .3s ease;
 }
 
@@ -65,17 +67,71 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Rubik", sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: var(--mainColor);
+}
+
+.margin-right-sm {
+	margin-right: 1.6rem;
+}
+
+.header__menu-link.nav-cta:link,
+.header__menu-link.nav-cta:visited {
+	padding: 1.2rem 2.4rem;
+	border-radius: var(--borderRadius);
+	color: var(--whiteColor);
+	background-color: var(--primaryColor);
+}
+
+.header__menu-link.nav-cta:hover,
+.header__menu-link.nav-cta:active {
+	background-color: var(--darkPrimaryColor-10);
+}
+
+/*=================== SECTION HEADER =========================*/
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 9.6rem;
+	background-color: var(--heroBgColor);
+	padding: 0 4.8rem;
+}
+
+.header__logo {
+	height: 2.2rem;
+}
+
+.header__menu-list {
+	display: flex;
+	column-gap: 3.2rem;
+	list-style: none;
+	align-items: center;
+}
+
+.header__menu-link:link,
+.header__menu-link:visited {
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--secondaryColor);
+	text-decoration: none;
+	transition: all .3s ease-in;
+}
+
+.header__menu-link:hover,
+.header__menu-link:active {
+	color: var(--darkPrimaryColor-10);
 }
 
 /*=================== SECTION HERO =========================*/
 
 .hero {
 	background-color: var(--heroBgColor);
-	padding-block: 9.6rem;
+	padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero__wrapper {
@@ -85,6 +141,7 @@ body {
 	align-items: center;
 	column-gap: 9.6rem;
 	grid-template-columns: 1fr 1fr;
+	padding: 0 3.2rem;
 }
 
 .hero__content {
@@ -109,4 +166,37 @@ body {
 
 .hero__image-item {
 	width: 100%;
+}
+
+.hero__delivered {
+	display: flex;
+	align-items: center;
+	column-gap: 1.6rem;
+	margin-top: 8rem;
+}
+
+.hero__delivered-images {
+	display: flex;
+}
+
+.hero__delivered-images img {
+	height: 4.8rem;
+	width: 4.8rem;
+	margin-right: -1.6rem;
+	border-radius: 50%;
+	border: 3px solid var(--heroBgColor);
+}
+
+.hero__delivered-images img:last-child {
+	margin-right: 0;
+}
+
+.hero__delivered-text {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.hero__delivered-text span {
+	color: var(--darkPrimaryColor-10);
+	font-weight: 700;
 }
