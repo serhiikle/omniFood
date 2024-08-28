@@ -13,7 +13,6 @@
 	--tagVeganColor: #94d82d;
 	--tagPaleoColor: #ffd43b;
 	--authorColor: #6f6f6f;
-	--
 
 	--borderRadiusDefault: 9px;
 	--borderRadiusMedium: 11px;
@@ -125,7 +124,7 @@
 	flex-shrink: 0;
 	width: 2.4rem;
 	height: 2.4rem;
-	fill: var(--primaryColor);
+	color: var(--primaryColor);
 }
 
 /*list*/
@@ -147,7 +146,7 @@
 .list__icon {
 	width: 3rem;
 	height: 3rem;
-	fill: var(--primaryColor);
+	color: var(--primaryColor);
 }
 
 /*best-value*/
@@ -300,6 +299,10 @@ strong {
 
 .grid-3-cols {
 	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .how,
@@ -582,13 +585,11 @@ strong {
 
 /*=================== SECTION PRICING =========================*/
 
-.pricing {
-}
-
 .pricing__content {
 	display: flex;
 	justify-content: center;
 	gap: 9.6rem 6.4rem;
+	margin-bottom: 4.8rem;
 }
 
 .pricing__plan {
@@ -639,4 +640,33 @@ strong {
 .pricing__plan-btn {
 	text-align: center;
 	margin-top: 4.8rem;
+}
+
+.pricing__detail {
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	margin-bottom: 9.6rem;
+}
+
+.pricing__feature-icon {
+	color: var(--primaryColor);
+	height: 3.2rem;
+	width: 3.2rem;
+	margin-bottom: 3.2rem;
+	background-color: var(--bgColor);
+	padding: 1.6rem;
+	border-radius: 50%;
+}
+
+.pricing__feature-title {
+	font-size: 2.4rem;
+	color: var(--secondaryColor);
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+}
+
+.pricing__feature-text {
+	font-size: 1.8rem;
+	line-height: 1.8;
 }
