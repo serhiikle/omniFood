@@ -13,6 +13,7 @@
 	--tagVeganColor: #94d82d;
 	--tagPaleoColor: #ffd43b;
 	--authorColor: #6f6f6f;
+	--
 
 	--borderRadiusDefault: 9px;
 	--borderRadiusMedium: 11px;
@@ -121,33 +122,46 @@
 }
 
 .meal__icon {
+	flex-shrink: 0;
 	width: 2.4rem;
 	height: 2.4rem;
 	fill: var(--primaryColor);
 }
 
-/*diets*/
-.diets {
-}
+/*list*/
 
-.diets__list {
+.list {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
 	gap: 1.6rem;
 }
 
-.diets__item {
+.list__item {
 	font-size: 1.8rem;
 	display: flex;
 	align-items: center;
 	gap: 1.6rem;
 }
 
-.diets__icon {
+.list__icon {
 	width: 3rem;
 	height: 3rem;
 	fill: var(--primaryColor);
+}
+
+/*best-value*/
+
+.best-value {
+	position: absolute;
+	top: 6%;
+	right: -16%;
+	text-transform: uppercase;
+	background-color: var(--tagPaleoColor);
+	font-weight: 600;
+	font-size: 1.2rem;
+	padding: 0.8rem 8rem;
+	transform: rotate(45deg);
 }
 
 /*=================== MODIFICATORS =========================*/
@@ -196,16 +210,6 @@
 	margin-bottom: 3.2rem;
 }
 
-/*grid*/
-
-.grid-2-cols {
-	grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3-cols {
-	grid-template-columns: repeat(3, 1fr);
-}
-
 /*tags*/
 
 .tag--vegetarian{
@@ -220,6 +224,13 @@
 	background-color: var(--tagPaleoColor);
 }
 
+/*pricing*/
+
+.pricing__plan--complete {
+	background-color: var(--bgColor);
+	position: relative;
+}
+
 /*=================== GLOBAL STYLE =========================*/
 
 html {
@@ -227,6 +238,8 @@ html {
 }
 
 body {
+	max-width: 2560px;
+	margin: 0 auto;
 	font-family: "Rubik", sans-serif;
 	line-height: 1;
 	font-weight: 400;
@@ -281,20 +294,34 @@ strong {
 	gap: 9.6rem 6.4rem;
 }
 
+.grid-2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
 .how,
-.meals{
+.meals,
+.pricing {
 	padding: 9.6rem 0;
 }
 
 /*=================== SECTION HEADER =========================*/
 
 .header {
+	background-color: var(--bgColor);
+}
+
+.header__wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 9.6rem;
-	background-color: var(--bgColor);
 	padding: 0 4.8rem;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
 .header__logo {
@@ -515,9 +542,6 @@ strong {
 	gap: 4.8rem;
 }
 
-.testimonials__content-item {
-}
-
 .testimonials__content-image {
 	width: 6.4rem;
 	border-radius: 50%;
@@ -554,4 +578,65 @@ strong {
 
 .testimonial__gallery-image:hover {
 	transform: scale(1.1);
+}
+
+/*=================== SECTION PRICING =========================*/
+
+.pricing {
+}
+
+.pricing__content {
+	display: flex;
+	justify-content: center;
+	gap: 9.6rem 6.4rem;
+}
+
+.pricing__plan {
+	border-radius: var(--borderRadiusMedium);
+	padding: 4.8rem;
+	max-width: 42rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid var(--bgColor);
+	overflow: hidden;
+}
+
+.prising__plan-container {
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+
+.pricing__plan-name {
+	font-size: 2em;
+	font-weight: 600;
+	color: var(--darkPrimaryColor-10);
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	margin-bottom: 3.2rem;
+}
+
+.pricing__plan-price {
+	font-size: 6.2rem;
+	font-weight: 600;
+	color: var(--secondaryColor);
+	margin-bottom: 1.6rem;
+}
+
+.pricing__plan-price span {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-right: 0.8rem;
+}
+
+.pricing__plan-description {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: var(--authorColor);
+}
+
+.pricing__plan-btn {
+	text-align: center;
+	margin-top: 4.8rem;
 }

@@ -12,16 +12,19 @@
 <body>
 	<!-- SECTION HEADER -->
 	<header class="header">
-		<img src="./img/omnifood-logo.png" alt="Omnigood" class="header__logo">
-		<nav class="header__menu">
-			<ul class="header__menu-list">
-				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 1</a></li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 2</a></li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 3</a></li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link">Section 4</a></li>
-				<li class="header__menu-item"><a href="#" class="header__menu-link nav-cta">Section 5</a></li>
-			</ul>
-		</nav>
+		<div class="header__wrapper">
+			<img src="./img/omnifood-logo.png" alt="Omnigood" class="header__logo">
+			<nav class="header__menu">
+				<ul class="header__menu-list">
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Section 1</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Section 2</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Section 3</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link">Section 4</a></li>
+					<li class="header__menu-item"><a href="#" class="header__menu-link nav-cta">Section 5</a></li>
+				</ul>
+			</nav>
+		</div>
+		
 	</header>
 	<main>
 		<!-- SECTION HERO -->
@@ -158,16 +161,16 @@
 					<!-- diets -->
 					<div class="diets">
 						<h3 class="diets__title title title--small">Works with any diets:</h3>
-						<ul class="diets__list">
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Vegetarian</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Vegan</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Pescatarian</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Gluten-free</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Lactose-free</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Keto</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Paleo</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Low FODMAP</span></li>
-							<li class="diets__item"><ion-icon class="diets__icon" name="checkmark"></ion-icon><span>Kid-friendly</span></li>
+						<ul class="list">
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Vegetarian</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Vegan</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Pescatarian</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Gluten-free</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Lactose-free</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Keto</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Paleo</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Low FODMAP</span></li>
+							<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Kid-friendly</span></li>
 						</ul>
 					</div>
 				</div>
@@ -235,6 +238,55 @@
 					<figure class="testimonial__gallery-item">
 						<img class="testimonial__gallery-image" src="./img/gallery/gallery-9.jpg" alt="Photo of beautifully arranged food">
 					</figure>
+				</div>
+			</div>
+		</section>
+		<!-- SECTION PRICING -->
+		<section class="pricing">
+			<div class="container">
+				<div class="pricing__head">
+					<span class="pricing__head-subtitle subtitle">Pricing</span>
+					<h2 class="pricing__head-title title title--medium">Eating well without breaking the bank</h2>
+				</div>
+				<div class="pricing__content">
+					<!-- plan 1 -->
+					<div class="pricing__plan">
+						<div class="pricing__plan-wrapper">
+							<div class="prising__plan-container">
+								<p class="pricing__plan-name">Starter</p>
+								<p class="pricing__plan-price"><span>$</span>399</p>
+								<p class="pricing__plan-description">per month. That's just $13 per meal!</p>
+							</div>
+							<ul class="list">
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>1 meal per day</span></li>
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Order from 11am to 9pm</span></li>
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Delivery is free</span></li>
+							</ul>
+						</div>
+						<div class="pricing__plan-btn">
+							<a class="btn btn--full" href="#">Start eating well</a>
+						</div>
+					</div>
+					<!-- plan 2 -->
+					<div class="pricing__plan pricing__plan--complete">
+						<div class="pricing__plan-wrapper">
+							<div class="prising__plan-container">
+								<p class="pricing__plan-name">Complete</p>
+								<p class="pricing__plan-price"><span>$</span>649</p>
+								<p class="pricing__plan-description">per month. That's just $11 per meal!</p>
+							</div>
+							<ul class="list">
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span><strong>2 meals</strong> per day</span></li>
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Order <strong>24/7</strong></span></li>
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Delivery is free</span></li>
+								<li class="list__item"><ion-icon class="list__icon" name="checkmark"></ion-icon><span>Get access to latest recipes</span></li>
+							</ul>
+						</div>
+						<div class="pricing__plan-btn">
+							<a class="btn btn--full" href="#">Start eating well</a>
+						</div>
+						<div class="best-value">Best Value</div>
+					</div>
 				</div>
 			</div>
 		</section>
