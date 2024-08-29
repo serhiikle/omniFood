@@ -3,7 +3,9 @@
 :root {
 	--primaryColor: #e67e22;
 	--darkPrimaryColor-10: #cf711f;
+	--darkPrimaryColor-70: #45260a;
 	--lightPrimaryColor-80: #fae5d3;
+	--lightPrimaryColor-10: #eb984e;
 	--mainColor: #555;
 	--secondaryColor: #333;
 	--bgColor: #fdf2e9;
@@ -13,6 +15,9 @@
 	--tagVeganColor: #94d82d;
 	--tagPaleoColor: #ffd43b;
 	--authorColor: #6f6f6f;
+	--gradientColorLight: rgba(235, 152, 78, .3);
+	--gradientColorDark: rgba(230, 125, 34, .3);
+	--placeholderColor: #aaa;
 
 	--borderRadiusDefault: 9px;
 	--borderRadiusMedium: 11px;
@@ -31,9 +36,14 @@
 	box-sizing: inherit;
 }
 
+*:focus {
+	outline: ;
+}
+
 /*=================== COMPONENTS =========================*/
 
 /*btn*/
+.btn,
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -43,6 +53,11 @@
 	padding: 1.6rem 3.2rem;
 	font-weight: 600;
 	transition: all .3s ease;
+
+/*	only for button*/
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
 }
 
 /*link*/
@@ -189,6 +204,18 @@
 	box-shadow: inset 0 0 0 3px var(--whiteColor);
 }
 
+.btn--form {
+	background-color: var(--darkPrimaryColor-70);
+	color: var(--bgColor);
+	align-self: self-end;
+	padding: 1.2rem;
+}
+
+.btn--form:hover {
+	background-color: #fff;
+	color: var(--mainColor);
+}
+
 /*title*/
 
 .title--large {
@@ -307,7 +334,8 @@ strong {
 
 .how,
 .meals,
-.pricing {
+.pricing,
+.contacts {
 	padding: 9.6rem 0;
 }
 
@@ -669,4 +697,95 @@ strong {
 .pricing__feature-text {
 	font-size: 1.8rem;
 	line-height: 1.8;
+}
+
+/*=================== SECTION CONTACTS =========================*/
+
+.contacts__wrapper {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-image: linear-gradient(to right bottom, var(--lightPrimaryColor-10), var(--primaryColor));
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, .15);
+	border-radius: var(--borderRadiusMedium);
+	height: 50rem;
+}
+
+.contacts__content {
+	padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+	color: var(--darkPrimaryColor-70);
+}
+
+.contacts__title {
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+
+.contacts__text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 4.8rem;
+}
+
+.contacts__form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2.4rem 3.2rem;
+}
+
+.contacts__form fieldset {
+	border: none;
+}
+
+.contacts__form label {
+	display: block;
+	font-weight: 500;
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
+}
+
+.contacts__form input,
+.contacts__form select {
+	width: 100%;
+	padding: 1.2rem;
+	font-size: 1.8rem;
+	font-family: inherit;
+	border: none;
+	color: inherit;
+	background-color: var(--bgColor);
+	border-radius: var(--borderRadiusDefault);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.contacts__form input::placeholder {
+	color: var(--placeholderColor);
+}
+
+.contacts__form select {
+	appearance: none;
+	position: relative;
+}
+
+.where {
+	position: relative;
+}
+
+.where:after {
+	content: "";
+	position: absolute;
+	border: solid 7px transparent;
+	border-top-color: var(--darkPrimaryColor-70);
+	top: 4.8rem;
+	right: 1.4rem;
+	z-index: 2;
+}
+
+.contacts__form button {}
+
+.contacts__image {
+	background-image: linear-gradient(to right bottom, var(--gradientColorLight), var(--gradientColorDark)), url(../img/eating.jpg);
+	background-size: cover;
+	background-position: center center;
 }
