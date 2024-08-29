@@ -42,6 +42,11 @@
 
 /*=================== COMPONENTS =========================*/
 
+/*logo*/
+.logo {
+	height: 2.2rem;
+}
+
 /*btn*/
 .btn,
 .btn:link,
@@ -176,6 +181,26 @@
 	font-size: 1.2rem;
 	padding: 0.8rem 8rem;
 	transform: rotate(45deg);
+}
+/*social*/
+.social__list {
+	list-style: none;
+	display: flex;
+	gap: 2.4rem;
+	margin-bottom: 3.2rem;
+}
+.social__item {
+}
+.social__link {}
+.social__icon {
+	font-size: 2.4rem;
+	color: var(--authorColor);
+}
+
+.copyright {
+	font-size: 1.4em;
+	color: var(--authorColor);
+	line-height: 1.6;
 }
 
 /*=================== MODIFICATORS =========================*/
@@ -335,7 +360,8 @@ strong {
 .how,
 .meals,
 .pricing,
-.contacts {
+.contacts,
+.footer {
 	padding: 9.6rem 0;
 }
 
@@ -353,10 +379,6 @@ strong {
 	padding: 0 4.8rem;
 	max-width: 1600px;
 	margin: 0 auto;
-}
-
-.header__logo {
-	height: 2.2rem;
 }
 
 .header__menu-list {
@@ -789,3 +811,92 @@ strong {
 	background-size: cover;
 	background-position: center center;
 }
+
+/*=================== SECTION FOOTER =========================*/
+
+.footer__contacts-title,
+.footer__nav-title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-bottom: 3.2rem;
+}
+
+.footer__wrapper {
+	display: grid;
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+	gap: 9.6rem 6.4rem;
+}
+
+.footer__logo-link {
+	display: block;
+	margin-bottom: 3.2rem;
+}
+
+.footer__contacts {
+}
+
+.footer__contacts-title {}
+
+.footer__contacts-data {
+	font-style: normal;
+	font-size: 1.4rem;
+	line-height: 1.4;
+}
+
+.footer__contacts-address {
+	margin-bottom: 2rem;
+}
+
+.footer__contacts-email,
+.footer__contacts-phone {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--authorColor);
+}
+
+.footer__nav {
+}
+
+.footer__nav-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.8rem;
+}
+
+.footer__nav-item {
+}
+
+.footer__nav-link {
+	position: relative;
+}
+
+.footer__nav-link:before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -15px;
+	width: 10px;
+	height: 2px;
+	background-color: transparent;
+	transition: background-color .3s;
+}
+
+.footer__nav-link:link,
+.footer__nav-link:visited {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: var(--authorColor);
+	transition: color .3s;
+}
+
+.footer__nav-link:hover,
+.footer__nav-link:active {
+	color: var(--mainColor);
+}
+
+.footer__nav-link:hover:before,
+.footer__nav-link:active:before {
+	background-color: currentColor;
+}
+
