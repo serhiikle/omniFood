@@ -1,0 +1,56 @@
+.testimonials {
+	background-color: $bgColor;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__inner {
+    padding: 9.6rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.8rem;
+
+    &-image {
+      inline-size: 6.4rem;
+      border-radius: 50%;
+      margin-block-end: 1.2rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-block-end: 1.6rem;
+    }
+
+    &-author {
+      font-size: 1.6rem;
+      color: $authorColor;
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+
+    &-item {
+      overflow: hidden;
+    }
+
+    &-image {
+      display: block;
+      inline-size: 100%;
+      transition: transform .4s ease-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

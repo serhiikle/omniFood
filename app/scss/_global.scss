@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-inline-size: 256rem;
+	margin-inline: auto;
+	font-family: "Rubik", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: $mainColor;
+}
+
+strong {
+	font-weight: 500;
+}
+
+main {
+  overflow-x: clip;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.container {
+	max-inline-size: 120rem;
+	padding-inline: 3.2rem;
+	margin-inline: auto;
+}
+
+.mt-80 {
+	margin-block-start: 8rem;
+}
+
+.margin-right-sm {
+	margin-inline-end: 1.6rem;
+}
+
+.grid {
+	display: grid;
+	gap: 9.6rem 6.4rem;
+}
+
+.grid-2-cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.how,
+.meals,
+.pricing,
+.contacts,
+.footer {
+	padding-block: 9.6rem;
+}

@@ -1,0 +1,47 @@
+.meals__head {
+	text-align: center;
+}
+
+.meals__content {
+	margin-block-end: 4.8rem;
+}
+
+.meals__recipes {
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.tag {
+	&--vegetarian{
+		background-color: $tagVegeterianColor;
+	}
+
+	&--vegan {
+		background-color: $tagVeganColor;
+	}
+
+	&--paleo {
+		background-color: $tagPaleoColor;
+	}
+}
+
+.link {
+	&:link,
+	&:visited {
+		display: inline-block;
+		color: $primaryColor;
+		text-decoration: none;
+		border-bottom: 1px solid currentColor;
+		padding-block-end: .4rem;
+		transition: all .3s ease;
+	}
+
+	&:hover,
+	&:active {
+		color: $darkPrimaryColor-10;
+		border-bottom: 1px solid transparent;
+	}
+}
+
+
+

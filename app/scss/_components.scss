@@ -1,0 +1,257 @@
+//================ LOGO =====================
+
+.logo {
+  block-size: 2.2rem;
+}
+
+//================ MENU =====================
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 3.2rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $secondaryColor;
+      text-decoration: none;
+      transition: all .3s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      color: $darkPrimaryColor-10;
+    }
+
+    &.nav-cta {
+      &:link,
+      &:visited {
+        padding: 1.2rem 2.4rem;
+        border-radius: $borderRadiusDefault;
+        color: $whiteColor;
+        background-color: $primaryColor;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $darkPrimaryColor-10;
+      }
+    }
+  }
+}
+
+.menu-btn {
+	display: none;
+	z-index: 9999;
+  
+  &__open,
+  &__close {
+    color: $secondaryColor;
+    font-size: 2.4rem;
+  }
+}
+
+//================ TITLE =====================
+
+.title {
+	font-weight: 700;
+	color: $secondaryColor;
+	letter-spacing: -0.5px;
+
+  &--large {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-block-end: 3.2rem;
+  }
+  
+  &--medium {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-block-end: 9.6rem;
+  }
+  
+  &--small {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-block-end: 3.2rem;
+  }
+}
+
+.subtitle {
+	display: block;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: $darkPrimaryColor-10;
+	font-weight: 500;
+	margin-block-end: 1.6rem;
+	letter-spacing: 0.75px;
+}
+
+//================ BUTTON =====================
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: $borderRadiusDefault;
+    padding: 1.6rem 3.2rem;
+    font-weight: 600;
+    transition: all .3s ease;
+  
+  /*	only for button*/
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  &--full {
+    &:link,
+    &:visited {
+      background-color: $primaryColor;
+      color: $whiteColor;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $darkPrimaryColor-10;
+    }
+  }
+
+  &--outline {
+    &:link,
+    &:visited {
+      background-color: $whiteColor;
+      color: $mainColor;
+    }
+    
+    &:hover,
+    &:active {
+      background-color: $bgColor;
+      box-shadow: inset 0 0 0 3px $whiteColor;
+    }
+  }
+  
+  &--form {
+    background-color: $darkPrimaryColor-70;
+    color: $bgColor;
+    align-self: self-end;
+    padding: 1.2rem;
+
+    &:hover {
+      background-color: $whiteColor;
+      color: $mainColor;
+    }
+  }
+}
+
+//================ MEAL =====================
+
+.meal {
+	box-shadow: 0 2.4rem 4.8rem rgba($blackColor, .075);
+	border-radius: $borderRadiusMedium;
+	overflow: hidden;
+	transition: all .4s ease-out;
+
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba($blackColor, .06);
+  }
+
+  &__image {
+    inline-size: 100%;
+  }
+
+  &__content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  &__tags {
+    margin-block-end: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.4rem;
+
+    &-item {
+      display: inline-block;
+      padding: 0.4rem 0.8rem;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $secondaryColor;
+      border-radius: 100px;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    color: $secondaryColor;
+    font-weight: 600;
+    margin-block-end: 3.2rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    inline-size: 2.4rem;
+    block-size: 2.4rem;
+    color: $primaryColor;
+  }
+}
+
+//================ LIST =====================
+
+.list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+
+  &__item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__icon {
+    inline-size: 3rem;
+    block-size: 3rem;
+    color: $primaryColor;
+  }
+}
+
+//================ BEST VALUE =====================
+
+.best-value {
+	position: absolute;
+	top: 6%;
+	right: -16%;
+	text-transform: uppercase;
+	background-color: $tagPaleoColor;
+	font-weight: 600;
+	font-size: 1.2rem;
+	padding: 0.8rem 8rem;
+	transform: rotate(45deg);
+}

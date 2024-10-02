@@ -1,0 +1,87 @@
+.contacts {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-image: linear-gradient(to right bottom, $lightPrimaryColor-10, $primaryColor);
+    box-shadow: 0 2.4rem 4.8rem rgba($blackColor, .15);
+    border-radius: $borderRadiusMedium;
+  }
+
+  &__content {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: $darkPrimaryColor-70;
+  }
+
+  &__title {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-block-end: 3.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-block-end: 4.8rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem 3.2rem;
+
+    & fieldset {
+      border: none;
+    }
+
+    & label {
+      display: block;
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin-block-end: 1.2rem;
+    }
+
+    & input,
+    & select {
+      inline-size: 100%;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      border: none;
+      color: inherit;
+      background-color: $bgColor;
+      border-radius: $borderRadiusDefault;
+      box-shadow: 0 1px 2px rgba($blackColor, .1);
+
+      &::placeholder {
+        color: $placeholderColor;
+      }
+    }
+
+    & select {
+      appearance: none;
+      position: relative;
+    }
+  }
+
+  &__image {
+    background-image: linear-gradient(to right bottom, $gradientColorLight, $gradientColorDark), url(../images/eating.webp);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.where {
+	position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: solid .7rem transparent;
+    border-top-color: $darkPrimaryColor-70;
+    top: 4.8rem;
+    right: 1.4rem;
+    z-index: 2;
+  }
+}

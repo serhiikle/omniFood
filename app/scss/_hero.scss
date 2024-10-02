@@ -1,0 +1,57 @@
+.hero {
+	background-color: $bgColor;
+	padding: 4.8rem 0 9.6rem 0;
+
+  &__wrapper {
+    max-inline-size: 130rem;
+    margin-inline: auto;
+    display: grid;
+    align-items: center;
+    column-gap: 9.6rem;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 3.2rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-block-end: 4.8rem;
+  }
+
+  &__delivered {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-block-start: 8rem;
+
+    &-images {
+      display: flex;
+
+      & img {
+        block-size: 4.8rem;
+        inline-size: 4.8rem;
+        margin-inline-end: -1.6rem;
+        border-radius: 50%;
+        border: 3px solid $bgColor;
+
+        &:last-child {
+          margin-inline-end: 0;
+        }
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      font-weight: 600;
+
+      span {
+        color: $darkPrimaryColor-10;
+        font-weight: 700;
+      }
+    }
+  }
+  
+  &__image-item {
+    inline-size: 100%;
+  }
+}

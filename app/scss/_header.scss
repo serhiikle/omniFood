@@ -1,0 +1,23 @@
+.header {
+  background-color: $bgColor;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    inline-size: 100%;
+    background-color: rgba($whiteColor, .95);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba($blackColor, .03);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    block-size: 8rem;
+    align-items: center;
+    padding-inline: 4.8rem;
+    max-inline-size: 160rem;
+    margin-inline: auto;
+  }
+}

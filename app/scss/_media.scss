@@ -1,0 +1,668 @@
+/* ==========================================================================
+========================       MEDIA 1440px      ============================
+===========================================================================*/
+
+@media (max-width: 90em) {
+
+  .testimonials {
+    &__inner {
+      padding: 2.4rem;
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    &__gallery {
+      grid-template-columns: 1fr 1fr;
+
+      &-item:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+========================       MEDIA 1255px      ============================
+===========================================================================*/
+
+@media (max-width: 78.4375em) {
+
+  .hero {
+    &__wrapper {
+      gap: 5.6rem;
+    }
+
+    &__title {
+      font-size: 4.2rem;
+    }
+
+    &__text {
+      font-size: 1.8rem;
+      line-height: 1.4;
+    }
+
+    &__delivered-text {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/* ==========================================================================
+========================       MEDIA 1150px      ============================
+===========================================================================*/
+
+@media (max-width: 71.875em) {
+
+  .contacts {
+    &__title {
+      font-size: 3.4rem;
+    }
+  
+    &__text {
+      font-size: 1.6em;
+    }
+  }
+}
+
+
+/* ==========================================================================
+========================       MEDIA 1100px      ============================
+===========================================================================*/
+
+@media (max-width: 68.75em) {
+	.meals,
+	.how {
+		padding: 6.6rem 0;
+	}
+
+	.meals {
+    &__content {
+      gap: 3.4rem;
+    }
+
+    &__head-title {
+      font-size: 3.4rem;
+      margin-block-end: 6.6rem;
+    }
+  }
+
+	.diets__title {
+		font-size: 2rem;
+		margin-block-end: 2.4rem;
+	}
+
+	.list {
+		gap: 0.6rem;
+
+    &__item {
+      font-size: 1.4rem;
+    }
+  
+    &__icon {
+      inline-size: 2rem;
+      block-size: 2rem;
+    }
+	}
+
+  .meal {
+    &__item {
+      font-size: 1.4rem;
+    }
+  
+    &__title {
+      font-size: 1.8rem;
+    }
+  
+    &__tags-item {
+      font-size: 1rem;
+    }
+  }
+
+  .contacts {
+    &__form {
+      grid-template-columns: 1fr;
+    }
+  
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+/* ==========================================================================
+========================       MEDIA 1000px      ============================
+===========================================================================*/
+
+@media (max-width: 62.5em) {
+
+	.logo {
+		block-size: 1.8rem;
+	}
+
+	.hero {
+    padding: 4.8rem 0 6.6rem 0;
+
+    &__delivered {
+      margin-block-start: 5rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  .hero__title,
+  .how__head-title {
+  	font-size: 2.4rem;
+  }
+
+  .hero__text,
+  .how__steps-description {
+  	font-size: 1.6rem;
+  }
+
+	.btn,
+  .btn:link, 
+  .btn:visited {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+    font-weight: 500;
+	}
+
+	.header__menu-list {
+		gap: 2.2rem;
+	}
+
+	.header__menu-link:link,
+	.header__menu-link:visited,
+	.how__head-subtitle  {
+		font-size: 1.4rem;
+	}
+
+	.how__steps-number {
+		font-size: 6.6rem;
+	}
+
+  .testimonials {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &-item:last-child {
+        display: block;
+      }
+    }
+  }
+
+	.footer__wrapper {
+		gap: 3rem;
+	}
+}
+
+/* ==========================================================================
+=========================       MEDIA 890px      ============================
+===========================================================================*/
+
+@media (max-width: 55.625em) {
+
+	.diets {
+		display: none;
+	}
+
+  .meals {
+    &__content {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    &__head {
+      &-title {
+        font-size: 2.4rem;
+        margin-block-end: 4.6rem;	
+      }
+
+      &-subtitle {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .pricing {
+  	padding: 6.6rem 0; 
+
+    &__head {
+      &-title {
+        font-size: 3.4rem;
+      }
+
+      &-subtitle {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__feature {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contacts {
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+
+  .footer {
+  	padding: 4.6rem 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__contacts,
+    &__logo {
+      max-inline-size: 21rem;
+    }
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 860px      ============================
+===========================================================================*/
+
+@media (max-width: 53.75em) {
+  .menu-btn {
+  	display: block;
+  }
+
+	.header {
+    &__menu-link:link,
+    &__menu-link:visited {
+      font-size: 2rem;
+    }
+
+    &__menu-list {
+      position: absolute;
+      inline-size: 100%;
+      block-size: 100vh;
+      left: 0;
+      top: 0;
+      background-color: rgba($whiteColor, .6);
+      backdrop-filter: blur(1rem);
+      flex-direction: column;
+      justify-content: center;
+      transform: translateY(-110%);
+      transition: transform .4s ease-out;
+    }
+
+    & .menu-btn__open {
+      display: block;
+    }
+
+    & .menu-btn__close {
+      display: none;
+    }
+
+    &.visible {
+      & .menu-btn__open {
+        display: none;
+      }
+
+      & .menu-btn__close {
+        display: block;
+      }
+
+      & .header__menu-list {
+        transform: translateY(0%);
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 768px      ============================
+===========================================================================*/
+
+@media (max-width: 48em) {
+
+  .hero {
+    padding: 2.8rem 0 6.6rem 0;
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    &__delivered {
+      justify-content: center;
+    }
+  }
+
+  .how {
+    &__steps {
+      gap: 4.6rem 0;
+
+      &-image img {
+        inline-size: 45%;
+      }
+
+      &-title {
+        font-size: 2rem;
+      }
+
+      &-description {
+        font-size: 1.4rem;
+      }
+
+      &-number {
+        font-size: 4.6rem;
+      }
+    }
+  }
+
+  .testimonials {
+    &__head-title {
+      font-size: 3rem;
+    }
+
+    &__content {
+      gap: 3rem;
+    }
+
+    &__content-text {
+      font-size: 1.6rem;
+    }
+  }
+
+	.pricing {
+    &__head-title {
+      margin-block-end: 6.6rem;
+    }
+
+    &__plan {
+      padding: 4.8rem 2rem;
+    }
+
+    &__feature {
+      gap: 4rem;
+    }
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 600px      ============================
+===========================================================================*/
+
+@media (max-width: 37.5em) {
+
+	.meals {
+		padding: 3.6rem 0;
+
+    &__content {
+      grid-template-columns: 1fr;
+    }
+	}
+
+	.meal {
+		max-inline-size: 320px;
+		margin-inline: auto;
+	}
+
+  .pricing {
+	  padding: 3.6rem 0;
+
+    &__head {
+      &-title {
+        font-size: 2rem;
+      }
+
+      &-subtitle {
+        font-size: 1rem;
+      }
+
+      &-title {
+        margin-block-end: 4.6rem;
+      }
+    }
+ 	}
+
+	.pricing__content {
+  	gap: 4.6rem 2.4rem;
+	}
+
+	.best-value {
+    top: 4%;
+    right: -31%;
+  }
+
+  .footer__contacts-title,
+  .footer__nav-title {
+    font-size: 1.8rem;
+    margin-block-end: 1.2rem;
+	}
+}
+
+/* ==========================================================================
+=========================       MEDIA 560px      ============================
+===========================================================================*/
+
+@media (max-width: 35em) {
+
+  .pricing {
+    &__content {
+      flex-wrap: wrap;
+    }
+
+    &__feature-title {
+      font-size: 1.8rem;
+    }
+
+    &__feature-text {
+      font-size: 1.4rem;
+    }
+
+    &__detail {
+      margin-block-end: 6.6rem;
+    }
+  }
+
+	.best-value {
+	  top: 6%;
+	  right: -19%;
+	}
+
+	.contacts {
+		padding: 4rem 0;
+	}
+}
+
+/* ==========================================================================
+=========================       MEDIA 480px      ============================
+===========================================================================*/
+
+@media (max-width: 30em) {
+
+	.how {
+		padding: 6.6rem 0;
+
+    &__inner {
+      gap: 6.4rem;
+    }
+
+    &__steps {
+      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column-reverse;
+
+      &:nth-child(odd) &-content {
+        order: 0;
+      }
+    }
+
+    .how__head-title {
+      margin-block-end: 5.6rem;
+    }
+	}
+
+  .testimonials {
+    &__head {
+      &-title {
+        font-size: 2rem;
+      }
+
+      &-subtitle {
+        font-size: 1.2rem;
+      }
+
+      &-title {
+        margin-block-end: 5.6rem;
+      }
+    }
+
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 4.6rem;
+
+      &-text {
+        margin-block-end: 1.1rem;
+      }
+    }
+  }
+
+  .contacts {
+    &__content {
+      padding: 2.4rem;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      margin-block-end: 2.2rem;
+    }
+
+    &__text {
+      font-size: 1.4em;
+      margin-block-end: 2.8rem;
+    }
+
+    &__form {
+      & input,
+      & select {
+        font-size: 1.3rem;
+      }
+    } 
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 420px      ============================
+===========================================================================*/
+
+@media (max-width: 26.25em) {
+
+  .hero {
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      margin-block-end: 4rem;
+    }
+
+    &__delivered {
+      margin-block-start: 3rem;
+    }
+  }
+
+	.btn,
+  .btn:link,
+  .btn:visited {
+		inline-size: 100%;
+		margin-block-end: 2rem;
+	}
+
+	.testimonials {
+    &__content-text {
+      font-size: 1.4rem;
+    }
+
+    &__gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+	.pricing__feature {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.best-value {
+    top: 4%;
+    right: -23%;
+  }
+
+	.contacts__form label {
+    font-size: 1.4rem;
+  }
+
+  .where:after {
+  	top: 4.4rem;
+  }
+
+  .footer {
+    &__wrapper {
+      justify-content: space-between;
+    }
+
+    &__logo {
+      max-inline-size: 100%;
+    }
+
+    &__contacts {
+      max-inline-size: 100%;
+
+      &-address {
+        margin-block-end: 1.2rem;
+      }
+    }
+  }
+
+  .social__list {
+    margin-block-end: 1.2rem;
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 360px      ============================
+===========================================================================*/
+
+@media (max-width: 22.5em) {
+
+  .best-value {
+    top: 5%;
+    right: -25%;
+  }
+}
+
+/* ==========================================================================
+=========================       MEDIA 340px      ============================
+===========================================================================*/
+
+@media (max-width: 22.5em) {
+
+  .best-value {
+    top: 4%;
+    right: -28%;
+    font-size: 1rem;
+  }
+}

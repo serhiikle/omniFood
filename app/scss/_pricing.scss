@@ -1,0 +1,94 @@
+.pricing {
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 9.6rem 6.4rem;
+    margin-block-end: 4.8rem;
+  }
+
+  &__plan {
+    border-radius: $borderRadiusMedium;
+    padding: 4.8rem;
+    max-inline-size: 42rem;
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid $bgColor;
+    overflow: hidden;
+
+    &-container {
+      text-align: center;
+      margin-block-end: 4.8rem;
+    }
+
+    &-name {
+      font-size: 2em;
+      font-weight: 600;
+      color: $darkPrimaryColor-10;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      margin-block-end: 3.2rem;
+    }
+
+    &-price {
+      font-size: 6.2rem;
+      font-weight: 600;
+      color: $secondaryColor;
+      margin-block-end: 1.6rem;
+
+      & span {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-inline-end: 0.8rem;
+      }
+    }
+
+    &-description {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: $authorColor;
+    }
+
+    &-btn {
+      text-align: center;
+      margin-block-start: 4.8rem;
+    }
+
+    &--complete {
+      background-color: $bgColor;
+      position: relative;
+    }
+  }
+
+  &__detail {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-block-end: 9.6rem;
+  }
+
+  &__feature {
+    &-icon {
+      color: $primaryColor;
+      block-size: 3.2rem;
+      inline-size: 3.2rem;
+      margin-block-end: 3.2rem;
+      background-color: $bgColor;
+      padding: 1.6rem;
+      border-radius: 50%;
+    }
+
+    &-title {
+      font-size: 2.4rem;
+      color: $secondaryColor;
+      font-weight: 700;
+      margin-block-end: 1.6rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+    }
+  }
+}
